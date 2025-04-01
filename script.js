@@ -1,16 +1,15 @@
-let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
 
-window.addEventListener("scroll", function () {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const fadeInOnScroll = () => {
+        sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    };
 
-    if (currentScroll > lastScrollTop) {
-        // Scrolling Down - Hide Navbar
-        navbar.classList.add("hidden");
-    } else {
-        // Scrolling Up - Show Navbar
-        navbar.classList.remove("hidden");
-    }
-
-    lastScrollTop = currentScroll;
+    fadeInOnScroll(); // Run on page load
+    window.addEventListener("scroll", fadeInOnScroll);
 });
