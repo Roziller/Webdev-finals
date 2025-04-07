@@ -155,8 +155,7 @@
       
     ];
   
-    const revealThreshold = 200; // px above section to show navbar
-  
+    const revealThreshold = 200; 
     function isNearSection(section) {
       const rect = section.getBoundingClientRect();
       return rect.top <= revealThreshold && rect.bottom > 0;
@@ -165,16 +164,16 @@
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
   
-      // Check if we're near any of the reveal sections
+     
       const isNearAnySection = revealSections.some(isNearSection);
   
       if (isNearAnySection) {
         header.classList.remove("hide-on-scroll");
       } else if (scrollY > lastScrollY) {
-        // Scrolling down
+        
         header.classList.add("hide-on-scroll");
       } else {
-        // Scrolling up
+     
         header.classList.remove("hide-on-scroll");
       }
   
