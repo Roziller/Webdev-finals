@@ -1,71 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymFit Pro - Your Ultimate Gym Workout Guide</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymFitPro</title>
+
+  <link rel="stylesheet" href="CSS/index.css"/>
+  <link rel="stylesheet" href="CSS/home.css"/>
+  <link rel="stylesheet" href="CSS/about.css"/>
+  <link rel="stylesheet" href="CSS/contact.css"/>
+  <link rel="stylesheet" href="CSS/components/login.css">
+  <link rel="stylesheet" href="CSS/components/header.css">
+  <link rel="stylesheet" href="CSS/components/buttons.css">
+  <!-- <link rel="stylesheet" href="login.html"/> -->
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
-    <header id="navbar">
-        <nav>
-            <ul>
-                <li><img src="images/logo.jpg" alt="GymFit Pro Logo" class="logo"></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#workout-programs">Workout Programs</a></li>
-                <li><a href="#login">Login</a></li>
-                <li><a href="#signup">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h1>Welcome to GymFit Pro</h1>
-        <p>Your ultimate guide to gym workouts designed to help you achieve your fitness goals.</p>
-        <button>Get Started</button>
+  <div class="bg-img-container">
+    <img
+      class="bg-img"
+      src="/ASSETS/IMAGES/ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg";
+      alt="Gym Background"
+    />
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="main-logo-container">
+        <h1>GymFit<span class="accent">Pro</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#get-started">Get Started</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+    <section class="welcome-section" id="home">
+      <h1>Welcome to <span class="logo1">GymFit</span><span class="logo2">Pro</span></h1>
+      <p class="description">Your fitness journey starts here. Whether you're training for strength,
+        endurance, or overall wellness, GymFitPro is your ultimate companion for
+        progress and motivation.
+      </p>
+      <div class="cta-buttons">
+        <a href="login.html" class="get-started-btn">
+          Get Started
+        </a>
+      </div>
+      <div class="home-separator"></div>
     </section>
 
     <section id="about">
-        <h2>About GymFit Pro</h2>
-        <p>GymFit Pro is your trusted partner in achieving your fitness goals with expert-designed workout programs and a supportive community.</p>
-        <p>Our mission is to provide accessible, high-quality workout plans tailored to individual fitness needs. Whether you’re a beginner or an experienced athlete, we offer structured routines to help you maximize your gym sessions.</p>
-        <p>At GymFit Pro, we believe in the power of knowledge and motivation. Our platform includes video tutorials, workout tracking, and a thriving fitness community to keep you engaged and inspired. No matter your goal—gaining muscle, losing weight, or maintaining fitness—we’ve got the perfect plan for you!</p>
-    </section>
-    
-    <section id="workout-programs">
-        <h2>Workout Programs</h2>
-        <div class="programs">
-            <div class="program">
-                <h3>Gaining Weight</h3>
-                <p>Strength and hypertrophy-focused workout plans to build muscle mass.</p>
-                <button>Start Program</button> 
-            </div>
-            <div class="program">
-                <h3>Losing Weight</h3>
-                <p>High-intensity training and cardio-based routines to burn fat efficiently.</p>
-                <button>Start Program</button> 
-            </div>
-            <div class="program">
-                <h3>Maintaining Weight</h3>
-                <p>Balanced fitness programs to sustain muscle and overall health.</p>
-                <button>Start Program</button>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h1>About <span class="accent">Us</span></h1>
+          <!-- <div class="separator"> -->
+          <!-- </div> -->
         </div>
+      </div>
+      <div class="about-details">
+        <div class="about-intro">
+          
+          <p><span class="accent">GymFit</span>Pro is more than a gym — it's a movement. We are dedicated to
+            empowering individuals to unlock their full potential through expert
+            coaching, innovative programs, and a motivating environment.
+          </p>
+            <p>
+              We believe in the power of community, accountability, and consistent effort.
+              Join the GymFitPro family and experience a new level of fitness.
+            </p>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-intro">
+        </div>
+      </div>
     </section>
-    <section id="features">
-        <h2>Why Choose GymFit Pro?</h2>
-        <ul>
-            <li>✅ Personalized Workout Plans</li>
-            <li>✅ Video Tutorials</li>
-            <li>✅ Progress Tracker</li>
-            <li>✅ Community Support</li>
-            <li>✅ Workout Reminders</li>
-        </ul>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h1><span class="accent">Contact</span> Us</h1>
+        </div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="icon">
+            <i class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <h3>Location</h3>
+        <p>Ayala Zone 1 Zamboanga City,
+          Philippines</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+      </div>
+      <!--  -->
+      <div class="details">
+        <h3>Email</h3>
+        <p>gymfitpro2019@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>( +63 ) 975 483 6266</p>
+        </div>
+      </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2025 GymFit Pro. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+      <div class="footer-content">
+          <p>
+              &copy; 2025 Group 5 WebDev. All Rights
+              Reserved.
+          </p>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </footer>
+  <script>
+    const header = document.querySelector("header");
+    let lastScrollY = window.scrollY;
+  
+    const revealSections = [
+      document.querySelector("#about"),
+      document.querySelector("#contact")
+     
+      
+    ];
+  
+    const revealThreshold = 200; // px above section to show navbar
+  
+    function isNearSection(section) {
+      const rect = section.getBoundingClientRect();
+      return rect.top <= revealThreshold && rect.bottom > 0;
+    }
+  
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+  
+      // Check if we're near any of the reveal sections
+      const isNearAnySection = revealSections.some(isNearSection);
+  
+      if (isNearAnySection) {
+        header.classList.remove("hide-on-scroll");
+      } else if (scrollY > lastScrollY) {
+        // Scrolling down
+        header.classList.add("hide-on-scroll");
+      } else {
+        // Scrolling up
+        header.classList.remove("hide-on-scroll");
+      }
+  
+      lastScrollY = scrollY;
+    });
+  </script>
+  
+  
 </body>
 </html>
