@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="CSS/components/login.css">
   <link rel="stylesheet" href="CSS/components/header.css">
   <link rel="stylesheet" href="CSS/components/buttons.css">
-  <!-- <link rel="stylesheet" href="login.html"/> -->
+  <link rel="stylesheet" href="CSS/components/responsive.css" />
+
+  
   
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
@@ -42,12 +44,12 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="login.html">Get Started</a></li>
         </ul>
       </nav>
-      <div class="menu-toggle">
+      <!-- <div class="menu-toggle">
         <i class="fas fa-bars"></i>
-      </div>
+      </div> -->
     </div>
   </header>
 
@@ -130,7 +132,7 @@
         </div>
       </div>
     </section>
-
+    
     <footer>
       <div class="footer-content">
           <p>
@@ -143,6 +145,7 @@
               <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
       </div>
+      
   </footer>
   <script>
     const header = document.querySelector("header");
@@ -155,7 +158,8 @@
       
     ];
   
-    const revealThreshold = 200; 
+    const revealThreshold = 200; // px above section to show navbar
+  
     function isNearSection(section) {
       const rect = section.getBoundingClientRect();
       return rect.top <= revealThreshold && rect.bottom > 0;
@@ -164,16 +168,16 @@
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
   
-     
+      // Check if we're near any of the reveal sections
       const isNearAnySection = revealSections.some(isNearSection);
   
       if (isNearAnySection) {
         header.classList.remove("hide-on-scroll");
       } else if (scrollY > lastScrollY) {
-        
+        // Scrolling down
         header.classList.add("hide-on-scroll");
       } else {
-     
+        // Scrolling up
         header.classList.remove("hide-on-scroll");
       }
   
