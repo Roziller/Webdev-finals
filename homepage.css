@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Poppins";
   color: rgb(255, 255, 255);
-  background-image: url("/ASSETS/IMAGES/ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg");
+  background-image: url("ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
