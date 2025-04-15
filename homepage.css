@@ -25,6 +25,7 @@ body::before {
   padding: 10px 20px;
   align-items: center;
   color: rgb(255, 255, 255);
+  position: sticky;
 }
 
 .navbar .logo {
