@@ -62,6 +62,7 @@ input[type="password"] {
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-style: none;
 }
 
 .login-btn:hover {
