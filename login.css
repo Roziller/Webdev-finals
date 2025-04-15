@@ -7,7 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("/ASSETS/IMAGES/ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg")
+              url("ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg")
               no-repeat center center fixed;
   background-size: cover;
   color: white;
