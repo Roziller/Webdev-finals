@@ -231,4 +231,124 @@ body {
     .article-card:hover {
       transform: translateY(-5px);
     }
+    .content-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #111;
+      text-align: center;
+    }
+    
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    
+    .image-container img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    
+    .intro-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+
+    .footer {
+      background: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    
+    .search-bar input {
+      padding: 0.5rem;
+      width: 300px;
+      max-width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .social-icons {
+      margin: 1.5rem 0;
+      font-size: 1.4rem;
+      color: #333;
+    }
+    
+    .social-icons i {
+      margin: 0 0.5rem;
+      cursor: pointer;
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    
+    .footer-links a {
+      color: #000;
+      text-decoration: none;
+      border-right: 1px solid #ccc;
+      padding: 0 0.5rem;
+    }
+    
+    .footer-links a:last-child {
+      border-right: none;
+    }
+    
+    .donation-info {
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    
+    .donation-info a {
+      color: #000;
+      text-decoration: underline;
+    }
+    
+    .footer-badges {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin: 2rem 0;
+    }
+    
+    .badge {
+      text-align: center;
+    }
+    
+    .badge img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    
+    .languages, .sister-site {
+      margin-top: 1rem;
+    }
+    
+    .languages a {
+      margin: 0 0.3rem;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .sister-site strong {
+      font-weight: bold;
+    }
     
