@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url('ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg');
+    background-size: cover;
+    background-position: center;                      
+    background-attachment: fixed; 
+  }
+  
+  .navigation-bar {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .nav-button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .bookmarks-button {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .donate-button {
+    background-color: #888;
+    color: #fff;
+  }
+  
+    .container {
+      display: flex;
+      height: calc(100vh - 60px);
+    }
+  
+    .sidebar, .contacts {
+      width: 220px;
+      background-color: #666;
+      padding: 20px 10px;
+    }
+  
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #555;
+      overflow-y: auto;
+    }
+  
+    .search {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .search button {
+      padding: 10px 20px;
+      background-color: white;
+      border: none;
+      border-radius: 20px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .activity, .contact-entry {
+      background-color: #a9b1b1;
+      margin: 10px auto;
+      height: 80px;
+      border-radius: 10px;
+    }
+  
+    .post-box {
+      background-color: #444;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .post-box input {
+      width: 98%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #a855f7;
+      font-size: 16px;
+     
+    }
+  
+    .post-actions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+    .post-actions button {
+      flex: 1;
+      margin: 0 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  
+    .post {
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  
+    .profile-pic {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .verified {
+      color: #1da1f2;
+      font-size: 14px;
+    }
+  
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #ffffffc2;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      height: 60%;
+    }
+    
+    .search-box {
+      width: 90%;
+      padding: 8px 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .filter-section {
+      margin-bottom: 20px;
+      color: #111;
+    }
+    
+    .filter-title {
+      font-weight: bold;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+    }
+    
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-left: 10px;
+    }
+    
+    .filter-options label {
+      font-size: 13px;
+      color: #333;
+    }
+    
+    .toggle-icon {
+      font-size: 12px;
+      color: #999;
+    }
+    
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .article-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .article-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    
+    .article-card h3 {
+      font-size: 16px;
+      margin: 10px;
+      color: #333;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+    }
+    .content-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #111;
+      text-align: center;
+    }
+    
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    
+    .intro-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+
+    .footer {
+      background: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    
+    .search-bar input {
+      padding: 0.5rem;
+      width: 300px;
+      max-width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .social-icons {
+      margin: 1.5rem 0;
+      font-size: 1.4rem;
+      color: #333;
+    }
+    
+    .social-icons i {
+      margin: 0 0.5rem;
+      cursor: pointer;
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    
+    .footer-links a {
+      color: #000;
+      text-decoration: none;
+      border-right: 1px solid #ccc;
+      padding: 0 0.5rem;
+    }
+    
+    .footer-links a:last-child {
+      border-right: none;
+    }
+    
+    .donation-info {
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    
+    .donation-info a {
+      color: #000;
+      text-decoration: underline;
+    }
+    
+    .footer-badges {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin: 2rem 0;
+    }
+    
+    .badge {
+      text-align: center;
+    }
+    
+    .badge img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    
+    .languages, .sister-site {
+      margin-top: 1rem;
+    }
+    
+    .languages a {
+      margin: 0 0.3rem;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .sister-site strong {
+      font-weight: bold;
+    }
+    
