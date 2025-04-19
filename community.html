@@ -9,20 +9,45 @@
   <title>GymFitPro Community</title>
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo"><span>GymFit</span>Pro</div>
-    <div class="nav-links">
-      <a href="#">HOME</a>
-      <a href="#">WORKOUTS</a>
-      <a href="#">MANAGE WORKOUTS</a>
-      <a href="#">CREATE WORKOUT PROGRAMS</a>
-      <a href="#" id="select">COMMUNITY</a>
-    </div>
-    <div class="app-download">
-      Get the app now!<br />
-      <span style="color: white">Download for Free!</span>
-    </div>
-  </div>
+  <main>
+
+    <div class="navigation-bar">   
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="Workout.html" class="nav-link">WORKOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">PLANS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">CHALLENGES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">GUIDES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">COMMUNITY</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-button bookmarks-button">
+                MY BOOKMARKS
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-button donate-button">
+                DONATE
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </main>
+
 
   <div class="option-bar">
     <div class="optns">
@@ -32,34 +57,46 @@
     </div>
   </div>
 
-  <section>
-    <div class="com-container">
-      <h2>Community Posts</h2>
-      <div class="post">
-        <div class="profile-pic"></div>
-        <div class="post-content">
-          <h5>User Name</h5>
-          <p>This is a sample post content. Share your workout tips!</p>
-          <span class="tag">New</span>
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="trend-container">
+          <h2>Trending Topics</h2>
+          <ul>
+            <li>#FitnessGoals</li>
+            <li>#HealthyEating</li>
+            <li>#WorkoutMotivation</li>
+          </ul>
         </div>
       </div>
-      <div class="post">
-        <div class="profile-pic"></div>
-        <div class="post-content">
-          <h5>User Name</h5>
-          <p>Check out my progress! Feeling great!</p>
-          <span class="tag">Update</span>
+      <div class="col-md-8">
+        <div class="com-container">
+          <h2>Community Posts</h2>
+          <form class="post-form mb-4">
+            <div class="mb-3">
+              <label for="postContent" class="form-label">Your Post</label>
+              <textarea class="form-control" id="postContent" rows="3" placeholder="Share your thoughts..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+          </form>
+          <div class="post">
+            <div class="profile-pic"></div>
+            <div class="post-content">
+              <h5>User Name</h5>
+              <p>This is a sample post content. Share your workout tips!</p>
+              <span class="tag">New</span>
+            </div>
+          </div>
+          <div class="post">
+            <div class="profile-pic"></div>
+            <div class="post-content">
+              <h5>User Name</h5>
+              <p>Check out my progress! Feeling great!</p>
+              <span class="tag">Update</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="trend-container">
-      <h2>Trending Topics</h2>
-      <ul>
-        <li>#FitnessGoals</li>
-        <li>#HealthyEating</li>
-        <li>#WorkoutMotivation</li>
-      </ul>
     </div>
   </section>
 

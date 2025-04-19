@@ -2,50 +2,71 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
-  background-image: url('ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg');
   background-size: cover;
-  background-position: center;                      
-  background-attachment: fixed; 
+  background-position: center;
+  background-attachment: fixed;
+
 }
 
-.navbar {
-  background-color: rgba(20, 20, 20, 0.9);
+
+.navigation-bar {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  justify-content: center; 
+  align-items: center; 
 }
 
-.navbar .logo {
-  font-weight: bolder;
-  font-size: 1.8rem;
+.nav-item {
+  margin: 0 15px; 
 }
 
-.navbar .logo span {
-  color: rgb(250, 187, 13);
-}
+.nav-item:hover {
+      background-color: #e0e0e0;
+      border-radius: 5px;
+  }
 
-.navbar .nav-links a {
-  color: rgb(250, 187, 13);
-  margin: 0 15px;
+
+.nav-link {
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.navbar .nav-links a:hover {
-  color: rgb(255, 255, 255);
-}
-
-.navbar .app-download {
+  color: #333;
   font-size: 14px;
-  text-align: right;
 }
 
+.nav-button {
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bookmarks-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.donate-button {
+  background-color: #888;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+}
 .option-bar {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(230, 230, 230, 0.8);
   display: flex;
   justify-content: space-around;
   padding: 10px 20px;
@@ -66,7 +87,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   padding: 20px;
-  margin: 50px 20px;
+  margin: 20px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -116,7 +137,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   padding: 20px;
-  margin: 50px 20px;
+  margin: 20px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -125,15 +146,32 @@ body {
   margin-bottom: 15px;
 }
 
-.list-group-item {
-  background-color: transparent;
-  border: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+.trend-container ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.list-group-item:hover {
+.trend-container li {
+  background-color: rgba(250, 187, 13, 0.1);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.trend-container li:hover {
   background-color: rgba(250, 187, 13, 0.2);
+}
+
+.post-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-form .form-label {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -142,15 +180,12 @@ body {
     align-items: flex-start;
   }
 
-  .navbar .nav-links {
-    margin-top: 10px;
-  }
-
   .option-bar {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .com-container, .trend-container {
-    margin: 
+    margin: 0;
   }
+}
