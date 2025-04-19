@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Page - GymFit Pro</title>
+  <link rel="stylesheet" href="workout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navigation-bar">   
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">WORKOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">PLANS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">CHALLENGES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">GUIDES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">COMMUNITY</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-button bookmarks-button">
+                MY BOOKMARKS
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-button donate-button">
+                DONATE
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="workout-container" id="workoutContainer">
+
+      </div>
+    
+      <div class="pagination" id="pagination"></div>
+    
+      <script>
+        const workouts = [
+          { img: 'bane-protocol-workout-intro.jpg', url: 'workout1.html' },
+          { img: 'core-reset-workout-intro.jpg', url: 'workout2.html' },
+          { img: 'morning-bell-workout-intro.jpg', url: 'workout3.html' },
+          { img: 'muscle-alchemy-workout-intro.jpg', url: 'workout4.html' },
+          { img: 'nothing-fancy-workout-intro.jpg', url: 'workout5.html' },
+          { img: 'shieldbreaker-workout-intro.jpg', url: 'workout6.html' },
+          { img: 'soft-start-workout-intro.jpg', url: 'workout7.html' },
+          { img: 'velocity-rush-workout-intro.jpg', url: 'workout8.html' },
+          { img: 'wake-up-mobility-workout-intro.jpg', url: 'workout9.html' },
+          { img: 'warrior-burpee-workout-intro.jpg', url: 'workout10.html' },
+          { img: 'begin-again-workout-intro.jpg', url: 'workout11.html' },
+          { img: 'comeback-cardio-workout-intro.jpg', url: 'workout12.html' },
+          { img: 'savage-core-workout-intro.jpg', url: 'workout13.html' },
+          { img: 'speedrun-workout-intro.jpg', url: 'workout14.html' },
+          { img: 'equilibrium-workout-intro.jpg', url: 'workout15.html' },
+          { img: 'final-boss-workout-intro.jpg', url: 'workout16.html' },
+          { img: 'quantum-leap-workout-intro.jpg', url: 'workout17.html' },
+          { img: 'osteoporosis-workout-intro.jpg', url: 'workout18.html' }
+        ];
+    
+        const workoutsPerPage = 6;
+        let currentPage = 1;
+    
+        function renderWorkouts() {
+          const container = document.getElementById('workoutContainer');
+          container.innerHTML = '';
+          const start = (currentPage - 1) * workoutsPerPage;
+          const end = start + workoutsPerPage;
+          const pageWorkouts = workouts.slice(start, end);
+    
+          pageWorkouts.forEach(workout => {
+            container.innerHTML += `
+              <div class="workout-card" onclick="window.location.href='${workout.url}'">
+                <img src="${workout.img}" alt="${workout.title}">
+                <div class="workout-title">${workout.title}</div>
+              </div>
+            `;
+          });
+        }
+    
+        function renderPagination() {
+          const pageCount = Math.ceil(workouts.length / workoutsPerPage);
+          const pagination = document.getElementById('pagination');
+          pagination.innerHTML = '';
+    
+          for (let i = 1; i <= pageCount; i++) {
+            const btn = document.createElement('button');
+            btn.textContent = i;
+            btn.className = i === currentPage ? 'active' : '';
+            btn.onclick = () => {
+              currentPage = i;
+              renderWorkouts();
+              renderPagination();
+            };
+            pagination.appendChild(btn);
+          }
+        }
+    
+        renderWorkouts();
+        renderPagination();
+      </script>
+    
+
+</body>
+</html>

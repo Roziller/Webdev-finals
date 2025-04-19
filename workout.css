@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;                      
+    background-attachment: fixed; 
+  }
+
+  .navigation-bar {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin: 0 15px;
+  }
+
+    .nav-item:hover {
+        background-color: #e0e0e0;
+        border-radius: 5px;
+    }
+
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .nav-button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .bookmarks-button {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .donate-button {
+    background-color: #888;
+    color: #fff;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .workout-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .workout-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .workout-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .workout-card img {
+    width: 100%;
+    display: block;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem auto;
+  }
+
+  .pagination button {
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #111;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .pagination button.active {
+    background-color: #c40000;
+    color: white;
+    font-weight: bold;
+  }
+
+  .pagination button:hover:not(.active) {
+    background-color: #f2f2f2;
+  }
+
+
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
