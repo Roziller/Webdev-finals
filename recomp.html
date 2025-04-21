@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Plan | GymFitPro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    :root {
+      --nav-font-size: 18px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fafafa;
+      padding: 17px 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .nav-container a {
+      text-decoration: none;
+      color: #0a0a0a;
+      font-size: 22px;
+    }
+    .community-btn {
+  background-color: #8b8b8b;
+  color: white !important;
+  padding: 5px 9px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.community-btn:hover {
+  background-color: rgb(173, 173, 173);
+  color: white !important;
+  border-color: rgb(173, 173, 173);
+  cursor: pointer;
+}
+    .donate-btn {
+      background-color: #696969;;
+      color: white !important;
+      padding: 5px 9px;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .donate-btn:hover {
+      background-color: red;
+      color: white !important;
+      border-color: red;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 20px;
+      margin-top: 15px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    .schedule {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    .schedule th, .schedule td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .highlight-red {
+      color: #e53935;
+      font-weight: bold;
+    }
+
+    .highlight-blue {
+      color: #1e88e5;
+      font-weight: bold;
+    }
+
+    .instructions ul,
+    .overview ul {
+      padding-left: 20px;
+    }
+
+    .instructions ul li,
+    .overview ul li {
+      margin-bottom: 10px;
+    }
+
+    h2.tagline {
+      text-align: center;
+      font-size: 80px;
+      margin: 90px 0 100px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #000000;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <div class="topbar">
+    <div class="nav-container">
+      <a href="index.html">HOME</a>
+      <a href="plan.html">PLANS</a>
+      <a href="#">CHALLENGES</a>
+      <a href="#">GUIDES</a>
+      <a href="#">COMMUNITY</a>
+      <a href="#" class="community-btn">MY BOOKMARKS</a>
+      <a href="#" class="donate-btn">DONATE</a>
+    </div>
+  </div>
+
+  <!-- Hero Image Banner -->
+  <div class="hero">
+    <img src="PLANS HEADER IMAGES/recomp.jpg" alt="Amazon Plan Banner" style="width: 60%; height: auto; display: block; margin: 5px auto 0; border-radius: 5px;">
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Weekly Schedule -->
+    <div class="section-title">Weekly Schedule</div>
+    <table class="schedule">
+      <tr><th>Day</th><th>Workout</th></tr>
+      <tr><td>Monday</td><td>Upper Body Strength Workout<br>Core Workout</td></tr>
+      <tr><td>Tuesday</td><td>HIIT Workout</td></tr>
+      <tr><td>Wednesday</td><td>Lower Body Strength Workout<br>Core Workout</td></tr>
+      <tr><td>Thursday</td><td>Metabolic Conditioning Workout</td></tr>
+      <tr><td>Friday</td><td>Morning: HIIT Workout<br>Evening: Full Body Strength Workout</td></tr>
+      <tr><td>Saturday</td><td>12,000 Steps<br>Mobility Routine</td></tr>
+      <tr><td>Sunday</td><td>12,000 Steps<br>Yoga</td></tr>
+    </table>
+
+    <!-- Overview -->
+    <div class="section-title">Overview</div>
+    <div class="overview">
+      <p><strong>RECOMP</strong> is a 6-week hybrid training plan designed to help you achieve the ultimate body recomposition — losing fat while building lean muscle. Using strength workouts, high-intensity circuits, and conditioning drills, this plan will push your body to adapt, grow stronger, and become more defined.</p>
+      <ul>
+        <li><strong>✓ Strength & Hypertrophy Focus:</strong> Build solid muscle with progressive resistance workouts.</li>
+        <li><strong>✓ Metabolic Conditioning (Metcon):</strong> High-intensity circuits to burn fat while preserving muscle.</li>
+        <li><strong>✓ Daily Core Activation:</strong> Develop a stronger, more defined midsection.</li>
+        <li><strong>✓ Functional Cardio:</strong> Improve endurance while maintaining strength.</li>
+        <li><strong>✓ Active Recovery Integration:</strong> Prevent burnout while staying mobile and active.</li>
+      </ul>
+    </div>
+
+    <!-- Who is This For? -->
+    <div class="section-title">Who is This For?</div>
+    <div class="overview">
+      <ul>
+        <li>Anyone who wants to lose fat & build muscle at the same time</li>
+        <li>People looking for a structured yet flexible approach</li>
+        <li>Those who enjoy variety in their training while still making progress</li>
+        <li>Anyone who wants a guided, hybrid plan</li>
+      </ul>
+    </div>
+
+    <!-- Instructions -->
+    <div class="section-title">Instructions</div>
+    <div class="instructions">
+      <ul>
+        <li>Use the database filter to find a workout that matches the type assigned for the day.</li>
+        <li>Set the difficulty level (1 to 5) to match your current fitness level.</li>
+        <li>Pick a workout and complete it on Level I, II, or III, depending on how much time and energy you have.</li>
+        <li>On rest days, complete a <span class="highlight-red">stretching routine</span> or a <span class="highlight-red">yoga sequence</span> to stay active and promote recovery.</li>
+        <li>Add a <span class="highlight-blue">core workout</span> throughout the week to support stability and aesthetics.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tagline -->
+  <h2 class="tagline">Built to Last</h2>
+
+</body>
+</html>
