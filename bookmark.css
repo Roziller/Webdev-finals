@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-bar {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.nav-item {
+  margin: 0 15px; 
+}
+
+.nav-item:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-button {
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bookmarks-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.donate-button {
+  background-color: #888;
+  color: #fff;
+}
+
+
+.option-bar {
+  background-color: rgba(230, 230, 230, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.optns-links {
+  color: rgb(0, 0, 0);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.bookmark-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.bookmark-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  flex: 1 1 calc(33.333% - 20px); 
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 40vh;
+}
+
+.bookmark-card h5 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.bookmark-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.bookmark-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.bookmark-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .bookmark-card {
+    flex: 1 1 calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 576px) {
+  .bookmark-card {
+    flex: 1 1 100%;
+  }
+}
