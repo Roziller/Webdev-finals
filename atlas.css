@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url('ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.navigation-bar {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bookmarks-button {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.donate-button {
+    background-color: #888;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffffc2;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.search-box {
+    width: 90%;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.filter-title {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 10px;
+}
+
+.filter-options label {
+    font-size: 13px;
+    color: #333;
+}
+
+.toggle-icon {
+    font-size: 12px;
+    color: #999;
+}
+
+.challenge-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.challenge-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: -2px; 
+}
+
+.challenge-subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.website {
+    font-weight: bold;
+    color: #007bff; 
+}
+
+.difficulty {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.difficulty p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.difficulty ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.difficulty li {
+    font-size: 0.9em;
+    margin: 3px 0;
+}
+
+.normal {
+    color: green;
+    font-weight: bold;
+}
+
+.hard {
+    color: orange;
+    font-weight: bold;
+}
+
+.brutal {
+    color: red;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.day-box {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px; 
+}
+
+.day-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.day-box.done {
+    background-color: #f0f9f0; 
+}
