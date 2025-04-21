@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fafafa;
+  padding: 17px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+.nav-center {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+    .grid-container {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+      
+      .card h2 {
+        font-size: 50px; /* Bigger title */
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      
+      .card p {
+        font-size: 20px; /* Bigger paragraph text */
+        margin: 20px 0;
+      }
+      
+      .card .highlight {
+        color: red;
+        font-weight: bold;
+        font-size: 22px; /* Bigger highlight */
+      }
+      
+      .card .tag {
+        display: inline-block;
+        margin-top: 20px;
+        background: #333;
+        color: #fff;
+        font-size: 16px; /* Larger tag font */
+        font-weight: bold;
+        padding: 10px 14px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+      }
+
+
+      .nav-center a,
+      .nav-donate a {
+        text-decoration: none;
+        color: #0a0a0a;
+        font-size: 22px;
+      }
+        
+    .grid-container {
+        max-width: 1200px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* ⬅️ Was 300px */
+        gap: 20px;
+        background-color: #00000025;
+        padding: 25px;
+        border-radius: 5px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+      }
+      /* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Make the “Search Programs” and “Filter by Plan” labels white */
+label[for="search"],
+label[for="filter"] {
+  color: #000000;
+}
+
+/* Make the text inside the input and select white, with a subtle transparent background */
+#search,
+#filter {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
+}
+
+/* Lighten the placeholder text so it’s still readable */
+#search::placeholder {
+  color: #000000;
+}
+
+/* Make the options in the "Filter by Plan" dropdown stay black */
+#filter option {
+  color: black;
+}
+/* container for search + filter */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;           /* space between them */
+  margin: 20px 0;
+}
+
+/* individual boxes get no extra centering */
+.search-box,
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;            /* space label ↔ input */
+}
+
+/* keep your white labels */
+label[for="search"],
+label[for="filter"] {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* inputs stay white text */
+#search,
+#filter {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+/* ensure dropdown options text stays black */
+#filter option {
+  color: black;
+}
+
+/* placeholder color */
+#search::placeholder {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    padding: 10px;
+  }
+  .program-intro-box {
+    max-width: 90%;
+    padding: 10px;
+  }
+  .card h2 {
+    font-size: 36px;
+  }
+  .card p {
+    font-size: 18px;
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+.grid-container .card:nth-child(1) { animation-delay: 0.05s; }
+.grid-container .card:nth-child(2) { animation-delay: 0.1s; }
+.grid-container .card:nth-child(3) { animation-delay: 0.15s; }
+/* and so on... up to like 10-12 for effect */
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 0.4s; /* Delay for subtle cascade */
+}
+
+.card.image-only {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.image-only img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.donate-btn {
+  background-color: #696969;
+  color: white !important;
+  padding: 5px 9px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: red;
+  color: white !important;
+  border-color: red;
+  cursor: pointer;
+}
+
+.community-btn {
+  background-color: #8b8b8b;
+  color: white !important;
+  padding: 5px 9px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.community-btn:hover {
+  background-color: rgb(173, 173, 173);
+  color: white !important;
+  border-color: rgb(173, 173, 173);
+  cursor: pointer;
+}

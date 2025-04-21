@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Programs</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <style>
+    .card {
+      opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  display: block;
+  overflow: hidden;
+  }
+  .card img {
+    transition: transform 0.3s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+  }
+
+  .card:hover img {
+  transform: scale(1.15);
+}
+
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="nav-center">
+      <a href="#">HOME</a>
+      <a href="#">PLANS</a>
+      <a href="#">CHALLENGES</a>
+      <a href="#">GUIDES</a>
+      <a href="#">COMMUNITY</a>
+      <a href="#" class="community-btn">MY BOOKMARKS</a>
+      <a href="#" class="donate-btn">DONATE</a>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <a href="amazon.html" class="card image-only">
+      <img src="PLANS IMAGES/amazon-intro.jpg" alt="Amazon Program" />
+    </a>
+    <a href="assassin.html" class="card image-only">
+      <img src="PLANS IMAGES/assassin-intro.jpg" alt="Assassin Program" />
+    </a>
+    <a href="fighter.html" class="card image-only">
+      <img src="PLANS IMAGES/fighter-intro.jpg" alt="Fighter Program" />
+    </a>
+    <a href="gladiator.html" class="card image-only">
+      <img src="PLANS IMAGES/gladiator-intro.jpg" alt="Gladiator Program" />
+    </a>
+    <a href="guardian.html" class="card image-only">
+      <img src="PLANS IMAGES/guardian-intro.jpg" alt="Guardian Program" />
+    </a>
+    <a href="knight.html" class="card image-only">
+      <img src="PLANS IMAGES/knight-intro.jpg" alt="Knight Program" />
+    </a>
+    <a href="ninja.html" class="card image-only">
+      <img src="PLANS IMAGES/ninja-intro.jpg" alt="Ninja Program" />
+    </a>
+    <a href="ppl.html" class="card image-only">
+      <img src="PLANS IMAGES/ppl-intro.jpg" alt="PPL Program" />
+    </a>
+    <a href="recomp.html" class="card image-only">
+      <img src="PLANS IMAGES/recomp-intro.jpg" alt="Recomp Program" />
+    </a>
+    <a href="spartan.html" class="card image-only">
+      <img src="PLANS IMAGES/spartan-intro.jpg" alt="Spartan Program" />
+    </a>
+    <a href="valkyrie.html" class="card image-only">
+      <img src="PLANS IMAGES/valkyrie-intro.jpg" alt="Valkyrie Program" />
+    </a>
+    <a href="viking.html" class="card image-only">
+      <img src="PLANS IMAGES/viking-intro.jpg" alt="Viking Program" />
+    </a>
+  </div>
+  <h2 style="
+    text-align: center;
+    font-size: 80px;
+    margin: 90px 0 100px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: italic;
+  ">
+    Built to Last
+  </h2>
+</body>
+</html>
