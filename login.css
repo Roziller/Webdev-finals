@@ -7,7 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg")
+              url("/ASSETS/IMAGES/ambitious-studio-rick-barrett-1RNQ11ZODJM-unsplash.jpg")
               no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -62,8 +62,6 @@ input[type="password"] {
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.3s ease;
-  color: inherit;          
-  text-decoration: none; 
 }
 
 .login-btn:hover {
@@ -78,7 +76,7 @@ input[type="password"] {
 
 .extra-links a {
   color: #ff6b00;
-
+  text-decoration: none;
 }
 
 .extra-links a:hover {
